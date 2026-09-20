@@ -49,7 +49,7 @@ def increment_day():
     actions
 def actions():
     global actions
-    curentaction = input("What do you want to do?\n" + )
+    curentaction = input("What do you want to do?\n" + print_actions() + "\n")
 def print_actions():
     pass
 # add main func:
