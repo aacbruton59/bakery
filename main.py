@@ -6,6 +6,7 @@ menu = ["Bread"]
 Money = 100
 income = 0
 expenses = 0
+actions  = ["bake", "advertize", "train"]
 def main():
     print("Welcome to Bakery!")
     print("\n")
@@ -14,6 +15,7 @@ def main():
         name_bakery(input("What is your bakery's name? "))
         print("\n")
         view_stats()
+        
 
 def name_bakery(nim):
     global bakery_name
@@ -23,7 +25,7 @@ def view_stats():
     print(f"Level: {lvl}")
     print(f"Days: {days}")
     print(f"Menu: {menu}")
-    print("Money" + calc_money(Money, income , expenses))
+    print("Money " + calc_money(Money, income , expenses))
     print(calc_profit(income, expenses))
 
 def calc_money(mon, inc, exp):
@@ -39,5 +41,16 @@ def calc_profit(inc, exp):
         return "You didn't make any money today."
 def neg(val):
     return val - val * 2
+
+def increment_day():
+    global days
+    day += 1
+    print("Entering Day " + days)
+    actions
+def actions():
+    global actions
+    curentaction = input("What do you want to do?\n" + )
+def print_actions():
+    pass
 # add main func:
 main()
